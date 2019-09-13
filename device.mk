@@ -237,8 +237,8 @@ PRODUCT_PACKAGES += \
     qti-telephony-common \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # Ramdisk
 PRODUCT_PACKAGES += \
