@@ -131,8 +131,8 @@ PRODUCT_PACKAGES += \
     memtrack.msm8916
 
 # Doze
-PRODUCT_PACKAGES += \
-   KiwiDoze
+#PRODUCT_PACKAGES += \
+#   KiwiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
