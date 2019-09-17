@@ -16,3 +16,8 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/full_kiwi.mk \
     $(LOCAL_DIR)/arrow_kiwi.mk
+
+COMMON_LUNCH_CHOICES := \
+ 	 arrow_kiwi-userdebug \
+	 arrow_kiwi-user \
+ 	 arrow_kiwi-eng
