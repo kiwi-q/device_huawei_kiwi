@@ -2,3 +2,6 @@ subdirs = [
     "sensors",
     "fingerprint",
 ]
+
+soong_namespace {
+}
