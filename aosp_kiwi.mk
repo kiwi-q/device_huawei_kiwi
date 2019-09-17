@@ -14,10 +14,12 @@
 
 $(call inherit-product, device/huawei/kiwi/full_kiwi.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common PixelExperience stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := arrow_kiwi
+PRODUCT_NAME := aosp_kiwi
 BOARD_VENDOR := huawei
 
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
