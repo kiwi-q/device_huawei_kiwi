@@ -215,9 +215,6 @@ void vendor_load_properties()
         property_set("telephony.lteOnCdmaDevice", "1");
     }
 
-    // Fix single sim variant based on property set by the bootloader
-    hwsim = GetProperty("ro.boot.hwsim", "");
-
     if (hwsim == "single") {
         property_set("ro.telephony.default_network", match->default_network);
     } else {
