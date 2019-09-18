@@ -37,7 +37,6 @@
 #include "vendor_init.h"
 #include "property_service.h"
 
-using android::base::GetProperty;
 using namespace std;
 
 typedef struct {
@@ -184,10 +183,6 @@ void vendor_load_properties()
     string model;
     string hwsim;
     match_t *match;
-
-    platform = GetProperty("ro.board.platform", "");
-    if (platform != ANDROID_TARGET)
-        return;
 
     ifstream app_info("/proc/app_info");
     if (app_info.is_open()) {
