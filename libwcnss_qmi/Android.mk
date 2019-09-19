@@ -22,7 +22,6 @@ include $(CLEAR_VARS)
 
 LOCAL_SHARED_LIBRARIES := \
     liblog \
-    libhuawei_secure \
     liboeminfo
 
 LOCAL_SRC_FILES := \
